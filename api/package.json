@@ -1,0 +1,24 @@
+{
+    "name": "api",
+    "version": "1.0.0",
+    "description": "",
+    "engines": {
+      "node": ">=18"
+    },
+    "type": "module",
+    "scripts": {
+      "prepare-env": "node --loader ts-node/esm ./prepare-env.ts",
+      "build": "npm run prepare-env && tsc",
+      "watch": "tsc -w",
+      "prestart": "npm run build",
+      "start": "func start",
+      "test": "echo \"No tests yet...\""
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+      "@azure/functions": "^3.2.0",
+      "@types/node": "18.x",
+      "typescript": "^4.8.4"
+    }
+  }
