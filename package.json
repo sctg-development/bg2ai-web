@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "npx @azure/static-web-apps-cli start http://localhost:5173 --swa-config-location ./ -p 8788 --api-location ./api -t 120 --run 'npm run dev'",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
@@ -16,6 +17,7 @@
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
+    "@azure/static-web-apps-cli": "^1.1.6",
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "@tsconfig/node18": "^18.2.2",
     "@types/node": "^18.18.5",
