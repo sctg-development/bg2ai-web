@@ -1,10 +1,10 @@
 <template>
   <main>
     <div class="wrapper">
-      <h1>laser<span class="dot">+</span>smart</h1>
-      <p>a new era is coming…</p>
+      <div class="w-full centered"><h1 >b.g&nbsp;<span class="dot">2</span>&nbsp;a.i</h1></div>
+      <p>your development partner…</p>
       <div class="logo">
-        <img src="https://ismo-group.co.uk/static/logo.svg" />
+        <img src="@/assets/logo.svg" />
       </div>
     </div>
   </main>
@@ -82,8 +82,13 @@ p {
   font-family: 'Muli', sans-serif;
   font-weight: normal;
 }
-
-
 .logo {
   padding: 4em;
-}</style>
+}
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+</style>
